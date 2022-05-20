@@ -1,0 +1,137 @@
+#header {
+  margin-top: clamp(0.5rem, 5vmin, 1.5rem);
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  height: clamp(4rem, 10vmin, 7rem);
+}
+
+.header__btn {
+  font-size: clamp(2rem, 5vmin, 2rem);
+  background-color: transparent;
+}
+
+.header__btn--close {
+  align-self: flex-end;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(80%, 40rem);
+  height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(141deg, #fff 0%, #f7f7f7 51%, #fff 75%);
+  z-index: 50;
+  transform: translateX(100%);
+}
+
+.menu::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 99%;
+  height: 100%;
+  width: 100vw;
+  background-color: #0a071380;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu--open {
+  transform: translateX(0);
+}
+
+.menu--open::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu__list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  text-align: center;
+}
+
+.menu__link {
+  position: relative;
+  color: var(--dark-color);
+}
+
+.menu__link::before {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  border-bottom: 0.1rem solid var(--dark-color);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu__link:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.menu__demo:last-of-type {
+  margin-top: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: unset;
+    right: unset;
+    height: auto;
+    width: 100%;
+    padding: unset;
+    background: none;
+    transform: unset;
+  }
+
+  .menu::after {
+    display: none;
+  }
+
+  .menu__list {
+    margin-left: auto;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .menu__demo {
+    margin-left: auto;
+  }
+
+  .header__btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu__list {
+    gap: 5rem;
+  }
+}
