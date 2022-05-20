@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #8a6af8;
+  --accent-color: #fac247;
+  --secondary-color: #7e7e7e;
+  --light-color: #f7f7f7;
+  --dark-color: #181131;
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  -webkit-text-fill-color: var(--light-color);
+  -moz-text-fill-color: var(--light-color);
+}
+
+::-moz-selection {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  -webkit-text-fill-color: var(--light-color);
+  -moz-text-fill-color: var(--light-color);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-size: clamp(1rem, 5vmin, 1.5rem);
+  background: linear-gradient(141deg, #fff 0%, #f7f7f7 51%, #fff 75%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+
+.container {
+  width: min(90%, 160rem);
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  outline: 0;
+  border: none;
+  box-shadow: none;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.btn--primary {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.btn--primary:hover {
+  background: transparent;
+  color: var(--dark-color);
+  box-shadow: inset 0 0 0 0.2rem var(--primary-color);
+}
