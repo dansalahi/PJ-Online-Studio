@@ -96,10 +96,6 @@ i.box--apple {
 }
 
 @media only screen and (max-width: 768px) {
-  #mobile-app {
-    margin-top: 10rem;
-  }
-
   .mobile__image {
     display: none;
   }
