@@ -1,0 +1,121 @@
+#mobile-app {
+  margin-top: 20rem;
+}
+
+.mobile__wrapper {
+  background-color: #f4f4ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10rem 0;
+}
+
+.mobile__image img {
+  height: 60rem;
+  transform: translateY(-10rem) rotate(10deg);
+  margin: 0 5rem;
+  box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);
+}
+
+.mobile__features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10rem 8rem;
+  background-color: #fff;
+}
+
+.mobile__features p {
+  color: var(--secondary-color);
+  font-size: var(--font-size-sm);
+  margin-bottom: 2rem;
+}
+.mobile__features p:first-child {
+  transform: translateY(-5rem);
+  font-size: var(--font-size-md);
+}
+
+.mobile__features h2 {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--dark-color);
+}
+
+.mobile__feature--items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 5rem;
+}
+
+.mobile__feature--items i {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: var(--light-color);
+}
+
+.mobile__feature--items h4 {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  margin: 2rem 0;
+}
+
+#mobile-app .feature__ux-design {
+  padding-right: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.feature__ios {
+  padding-left: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+#mobile-app .feature__ux-design:hover {
+  color: #13b237;
+  transform: translateY(-1rem);
+}
+.feature__ios:hover {
+  color: #44d4d7;
+  transform: translateY(-1rem);
+}
+
+i.box--design {
+  background-color: #13b237;
+}
+
+i.box--apple {
+  background-color: #44d4d7;
+}
+
+/* ---------------- MEDIA QUERIES ----------------- */
+@media only screen and (max-width: 992px) {
+  .mobile__wrapper {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #mobile-app {
+    margin-top: 10rem;
+  }
+
+  .mobile__image {
+    display: none;
+  }
+
+  .mobile__features {
+    padding: 8rem 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #mobile-app .container {
+    width: 100%;
+    margin: auto;
+  }
+}
