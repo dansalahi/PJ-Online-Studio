@@ -5,7 +5,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-template-areas: "offers__left--item offers__right--item";
-  margin-bottom: 10rem;
+  margin-bottom: 1rem;
 }
 .offers__left--item {
   grid-area: offers__left--item;
