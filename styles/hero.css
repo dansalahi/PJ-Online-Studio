@@ -1,5 +1,5 @@
 #hero {
-  margin-top: 10rem;
+  margin-top: min(12rem, 10vw);
 }
 
 .hero__wrapper {
