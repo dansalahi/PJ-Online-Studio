@@ -1,3 +1,7 @@
+#mobile-app {
+  overflow-x: hidden;
+}
+
 .mobile__wrapper {
   background-color: #f4f4ff;
   display: flex;
@@ -63,15 +67,46 @@
 
 #mobile-app .feature__ux-design {
   padding-right: 2.5rem;
-  transition: all 0.3s ease;
+  transition: 400ms ease-in-out;
 }
 
 .feature__ios {
   padding-left: 2.5rem;
-  transition: all 0.3s ease;
+  transition: 400ms ease-in-out;
 }
 
 #mobile-app .feature__ux-design:hover {
+  color: #13b237;
+  transform: translateY(-1rem);
+}
+.feature__ios:hover {
+  color: #44d4d7;
+  transform: translateY(-1rem);
+}
+
+i.box--design {
+  background-color: #13b237;
+  transition: all 0.4s ease-in-out;
+}
+
+i.box--apple {
+  background-color: #44d4d7;
+  transition: all 0.4s ease-in-out;
+}
+
+#mobile-app .feature__ux-design:hover i.box--design {
+  background: transparent;
+  color: #13b237;
+  box-shadow: 0.1rem 0.1rem 1rem 0 #13b237;
+}
+
+#mobile-app .feature__ios:hover i.box--apple {
+  background: transparent;
+  color: #44d4d7;
+  box-shadow: 0.1rem 0.1rem 1rem 0 #44d4d7;
+}
+
+/* #mobile-app .feature__ux-design:hover {
   color: #13b237;
   transform: translateY(-1rem);
 }
@@ -86,7 +121,7 @@ i.box--design {
 
 i.box--apple {
   background-color: #44d4d7;
-}
+} */
 
 /* ------------- animated-circle ------------- */
 #mobile-app .animated-circle {
