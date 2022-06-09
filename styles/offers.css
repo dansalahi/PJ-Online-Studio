@@ -136,7 +136,7 @@
       "offers__left--item"
       "offers__right--item";
     place-items: center;
-    margin-bottom: 10rem;
+    margin-bottom: 0;
   }
 
   .offers__left--item {
