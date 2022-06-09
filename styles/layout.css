@@ -71,7 +71,7 @@ a {
 main {
   display: flex;
   flex-direction: column;
-  gap: 20rem;
+  gap: 12rem;
 }
 
 .container {
