@@ -15,3 +15,5 @@ window.addEventListener("resize", () => {
   menu.classList.remove("menu--open");
   menu.style.transition = "none";
 });
+
+document.querySelector('#copyright-year').innerText = new Date().getFullYear();
