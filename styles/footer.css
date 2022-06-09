@@ -1,89 +1,89 @@
 .row {
-    margin: auto;
-    padding: 3rem 7rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); 
-    gap: 2rem 2rem;
+  margin: auto;
+  padding: 3rem min(7rem, 5vw);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem 2rem;
 }
 .footer {
-    padding: 10rem 0 2rem 0;
-    background-color: #fff4ef;
-    display: block;
+  padding: 10rem 0 2rem 0;
+  background-color: #fff4ef;
+  display: block;
 }
 .footer-col-1 {
-    margin-top: -3rem;
+  margin-top: -3rem;
 }
 .footer-col h4 {
-    font-size: 1.8rem;
-    margin-bottom: 3rem;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
 }
 .footer-col p {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 .footer-col img {
-    width: 14rem;
-    height: 7rem;
-    cursor: pointer;
+  width: 14rem;
+  height: 7rem;
+  cursor: pointer;
 }
 .footer-col ul li:not(:last-child) {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 .footer-col ul li a {
-    color: #000;
-    font-size: 1.5rem;
-    font-weight: 400;
-    transition: all 0.3s ease;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
 }
 .footer-col ul li a:hover {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 .footer-col .social-links a {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    line-height: 4rem;
-    border: solid 0.1rem #F39C12;
-    border-radius: 50%;
-    transition: all 0.3s ease;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 4rem;
+  border: solid 0.1rem #f39c12;
+  border-radius: 50%;
+  transition: all 0.3s ease;
 }
 .footer-col .social-links i {
-    color: #F39C12;
+  color: #f39c12;
 }
 .footer-col .social-link:hover {
-    border-color: #e67e22;
-    background-color: #e67e22; 
+  border-color: #e67e22;
+  background-color: #e67e22;
 }
-.footer-col .social-link:hover i{
-    color: #fff;
+.footer-col .social-link:hover i {
+  color: #fff;
 }
 .footer-col .social-links a:hover {
-    transform: translateY(0.1rem);
+  transform: translateY(0.1rem);
 }
 .social-links {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
-.first-p, .second-p {
-    color: var(--secondary-color);
+.first-p,
+.second-p {
+  color: var(--secondary-color);
 }
 .form-box {
-    display: flex;
-    border: solid 0.2rem #aeaaaa;
-    margin: 1rem 0;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
+  display: flex;
+  border: solid 0.2rem #aeaaaa;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 .form-box input {
-    border: none;
-    min-width: 50%;
-    flex-grow: 1;
-    background: transparent;
-    padding: 0.5rem 1rem;
-    font-size: 1.4rem;
-    font-family: inherit;
-    outline: none;
+  border: none;
+  min-width: 50%;
+  flex-grow: 1;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  font-family: inherit;
+  outline: none;
 }
 .form-box input::placeholder {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
-
