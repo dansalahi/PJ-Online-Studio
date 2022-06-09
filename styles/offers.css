@@ -90,11 +90,11 @@
   border-radius: 1.5rem;
   box-shadow: 0 1.5rem 1rem 0.5rem rgba(128, 128, 128, 0.097);
   -webkit-box-shadow: 0 1.5rem 1rem 0.5rem rgba(128, 128, 128, 0.097);
-  transition: all 0.3s ease-in-out;
+  transition: 400ms ease-in-out;
 }
 
 .offers__right--item > div:hover {
-  transform: translateX(-3rem);
+  transform: translateX(-1.5rem);
   cursor: pointer;
 }
 

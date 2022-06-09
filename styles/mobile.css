@@ -106,23 +106,6 @@ i.box--apple {
   box-shadow: 0.1rem 0.1rem 1rem 0 #44d4d7;
 }
 
-/* #mobile-app .feature__ux-design:hover {
-  color: #13b237;
-  transform: translateY(-1rem);
-}
-.feature__ios:hover {
-  color: #44d4d7;
-  transform: translateY(-1rem);
-}
-
-i.box--design {
-  background-color: #13b237;
-}
-
-i.box--apple {
-  background-color: #44d4d7;
-} */
-
 /* ------------- animated-circle ------------- */
 #mobile-app .animated-circle {
   width: 8rem;
