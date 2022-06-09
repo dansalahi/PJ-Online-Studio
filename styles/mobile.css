@@ -88,6 +88,26 @@ i.box--apple {
   background-color: #44d4d7;
 }
 
+/* ------------- animated-circle ------------- */
+#mobile-app .animated-circle {
+  width: 8rem;
+  height: 16rem;
+  border-radius: 8rem 0 0 8rem;
+  background: #fac247;
+  margin-left: auto;
+  animation: rotaition 5000ms infinite linear;
+  transform-origin: 8rem 8rem;
+}
+
+@keyframes rotaition {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* ---------------- MEDIA QUERIES ----------------- */
 @media only screen and (max-width: 992px) {
   .mobile__wrapper {
