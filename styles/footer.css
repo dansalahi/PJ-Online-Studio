@@ -87,3 +87,8 @@
 .form-box input::placeholder {
   font-size: 1.5rem;
 }
+.copy-right {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
