@@ -1,3 +1,7 @@
+#mobile-app {
+  overflow-x: hidden;
+}
+
 .mobile__wrapper {
   background-color: #f4f4ff;
   display: flex;
@@ -63,12 +67,12 @@
 
 #mobile-app .feature__ux-design {
   padding-right: 2.5rem;
-  transition: all 0.3s ease;
+  transition: 400ms ease-in-out;
 }
 
 .feature__ios {
   padding-left: 2.5rem;
-  transition: all 0.3s ease;
+  transition: 400ms ease-in-out;
 }
 
 #mobile-app .feature__ux-design:hover {
@@ -82,10 +86,44 @@
 
 i.box--design {
   background-color: #13b237;
+  transition: all 0.4s ease-in-out;
 }
 
 i.box--apple {
   background-color: #44d4d7;
+  transition: all 0.4s ease-in-out;
+}
+
+#mobile-app .feature__ux-design:hover i.box--design {
+  background: transparent;
+  color: #13b237;
+  box-shadow: 0.1rem 0.1rem 1rem 0 #13b237;
+}
+
+#mobile-app .feature__ios:hover i.box--apple {
+  background: transparent;
+  color: #44d4d7;
+  box-shadow: 0.1rem 0.1rem 1rem 0 #44d4d7;
+}
+
+/* ------------- animated-circle ------------- */
+#mobile-app .animated-circle {
+  width: min(8rem, 10vw);
+  height: min(16rem, 20vw);
+  border-radius: 8rem 0 0 8rem;
+  background: #fac247;
+  margin-left: auto;
+  animation: rotaition 5000ms infinite linear;
+  transform-origin: min(8rem, 10vw) min(8rem, 10vw);
+}
+
+@keyframes rotaition {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* ---------------- MEDIA QUERIES ----------------- */
@@ -96,6 +134,10 @@ i.box--apple {
 }
 
 @media only screen and (max-width: 768px) {
+  .mobile__wrapper {
+    margin: 1rem 0;
+  }
+
   .mobile__image {
     display: none;
   }
