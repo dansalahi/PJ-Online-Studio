@@ -1,6 +1,13 @@
 const menu = document.getElementById("menu");
 const menuOpenBtn = document.getElementById("menu-open-btn");
 const menuCloseBtn = document.getElementById("menu-close-btn");
+const splashScreen = document.querySelector(".splash-screen")
+
+window.addEventListener('DOMContentLoaded', (event) => {
+  setTimeout(() => {
+    splashScreen.classList.add("hidden")
+  }, 2000)
+});
 
 menuOpenBtn.addEventListener("click", () => {
   menu.classList.add("menu--open");
