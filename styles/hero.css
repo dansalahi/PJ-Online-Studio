@@ -138,14 +138,75 @@
   color: var(--secondary-color);
 }
 
-.hero__demo {
+.hero__button:hover .demo__container {
+  transform: scaleY(1);
+}
+.hero__button .demo__container {
+  position: absolute;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: black;
+  top: 100%;
+  left: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
-  gap: 1rem;
+  justify-content: space-evenly;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
 }
-
+.hero__button .demo__container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  border: 0.3rem solid var(--primary-color);
+  background-color: white;
+  padding: 1rem 2rem 0 0;
+  border-radius: 1rem;
+  width: 38rem;
+  z-index: 2;
+  box-shadow: inset 0rem 0rem 5rem -2rem var(--primary-color);
+}
+.hero__button .demo__container ul li {
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  font-size: 1.7rem;
+  transition: all 0.3s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 4;
+}
+.hero__button .demo__container ul li::before {
+  content: "";
+  display: table;
+  clear: both;
+  width: 0rem;
+  border-bottom: 0.2rem solid black;
+  transition: all 0.3s ease-in;
+}
+.hero__button .demo__container ul li:hover {
+  transform: translateX(1%);
+  font-weight: 600;
+}
+.hero__button .demo__container ul li:hover:before {
+  width: 3rem;
+}
+.hero__demo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4.5rem;
+}
+.hero__demo:hover .demo__description::before {
+  width: 3rem;
+}
 .hero__demo .demo__btn {
   display: flex;
   align-items: center;
@@ -156,17 +217,21 @@
 .hero__demo .demo__description {
   position: relative;
   color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: -3rem;
 }
 
 .hero__demo .demo__description::before {
   content: "";
-  position: absolute;
-  width: 1.3rem;
+  display: table;
+  clear: both;
+  width: 0;
   height: 0.2rem;
-  left: -2rem;
-  top: 50%;
   border-radius: 1rem;
   background-color: var(--secondary-color);
+  transition: width .3s ease-in;
 }
 
 .hero--right {
@@ -179,6 +244,7 @@
 
 @media screen and (min-width: 688px) {
   .hero__demo {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
