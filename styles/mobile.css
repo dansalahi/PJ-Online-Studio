@@ -24,7 +24,7 @@
   overflow-y: auto;
   scrollbar-width: thin;
   scroll-behavior: smooth;
-  background-image: url("/assets/mobile/mobileBackGround.avif");
+  background-image: url("../assets/mobile/mobileBackGround.avif");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
