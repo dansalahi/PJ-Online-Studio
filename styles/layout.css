@@ -53,6 +53,7 @@ body {
   background: linear-gradient(141deg, #fff 0%, #f7f7f7 51%, #fff 75%);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 button {
